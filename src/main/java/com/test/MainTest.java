@@ -14,7 +14,7 @@ public class MainTest {
 		final Email email = new Email();
 		
 		email.setSender("acestan175@gmail.com");
-		email.setPassword("********");
+		email.setPassword(new Scanner(System.in).nextLine());
 		email.setSubject("Test 123");
 		email.setText("This is test 123");
 		List<Recipient> recipients = new ArrayList<Recipient>();
